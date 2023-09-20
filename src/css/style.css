@@ -1,0 +1,111 @@
+/* Cor de fundo e a imagem */
+body {
+    background-image: url(../image/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0 20px;
+}
+
+/* LOGO */
+.logo img {
+    width: 190px;
+    padding-bottom: 50px;
+}
+
+/* CENTRO DA PÁGINA */
+.page-center {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.page-center .item .title {
+    color: white;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.page-center .item .text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Botão */
+.page-center .button {
+    display: inline-block;
+    box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    background-color: white;
+    padding: 16px 65px;
+    transition: 0.3s;
+}
+
+.button-word {
+    color: var(--primary-color);
+}
+
+.button-word:hover {
+    color: white;
+}
+
+.page-center .button:hover {
+    background-color: var(--button-color);
+}
+
+/* Ícones */
+.footer {
+    position: relative;
+    top: 70px;
+    text-align: right;
+}
+
+.footer .social .fa-brands {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a i{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+
+.footer .social .fa-brands:hover {
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+
+}
+
+@media only screen and (max-width: 1440px) {
+    .image img {
+        width: 100%;
+    }
+}

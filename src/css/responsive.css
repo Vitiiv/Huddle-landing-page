@@ -1,0 +1,31 @@
+@media(max-width:375px) {
+    body {
+        background-image: url(../image/bg-mobile.svg) cover center;
+
+    }
+
+    .container .logo img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .page-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+.page-center .item .title{
+    font-size: 26px;
+}
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20px;
+    }
+}
