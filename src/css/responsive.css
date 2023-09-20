@@ -1,14 +1,19 @@
-@media(max-width:375px) {
+@media(max-width:800px) {
     body {
         background-image: url(../image/bg-mobile.svg) cover center;
+    }
 
+    .main {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        width: 100%;
     }
 
     .container .logo img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        width: 60%;
+        font-size: 10rem;
+        margin-top: 3rem;
     }
 
     .page-center {
@@ -16,16 +21,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
-.page-center .item .title{
-    font-size: 26px;
-}
 
-    .footer{
+    .page-center .item {
+        padding: 0 1rem;
+    }
+
+    .page-center .image img {
+        padding: 0 4rem;
+        width: 70%;
+
+    }
+
+    footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 20px;
+        margin-bottom: 9rem;
+        padding-left: 20px;
     }
 }
